@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class NewScreen extends StatelessWidget {
@@ -10,10 +8,13 @@ class NewScreen extends StatelessWidget {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          leading: const Icon(
-            Icons.menu,
-            size: 30,
-            color: Colors.white,
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.menu,
+              size: 30,
+              color: Colors.white,
+            ),
           ),
           backgroundColor: Colors.black,
           title: const Text(
@@ -21,16 +22,14 @@ class NewScreen extends StatelessWidget {
             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
           ),
           centerTitle: true,
-          
-          actions: const [
-            
-            Icon(
-              
-
-              Icons.search,
-              color: Colors.white,
-              size: 30,
-            ),
+          actions: [
+            IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.search,
+                  color: Colors.white,
+                  size: 30,
+                )),
           ],
         ),
         body: const Center(
